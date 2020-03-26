@@ -1,0 +1,126 @@
+{
+    "Base File for Django HTML file with Bootstrap 4": {
+        "prefix": "!basebs4",
+        "body": [
+            "{% load static %}",
+            "<!DOCTYPE HTML>",
+            "<html lang =\"en\">",
+            "<head>",
+            "<meta charset= \"UTF-8\">",
+            "<meta name=\"viewport\" content =\"width = device-width,initial-scale=1.0\">",
+            "<meta http-equiv =\"X-UA-Compatible\"  content =\"ie=edge\">",
+            "<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\"integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\">",
+            "<title> ${1:title} </title>",
+            "</head>",
+            "<body>",
+            "{% block content %}",
+            "<h1> Hello World </h1>",
+            "",
+            "",
+            "",
+            "{% endblock %}",
+            "<script src=\"https://code.jquery.com/jquery-3.2.1.slim.min.js\" integrity=\"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN\" crossorigin=\"anonymous\"></script>",
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>",
+            "<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>",
+            "</body>",
+            "<html>"
+        ],
+        "description":"Base File for Django HTML file with Bootstrap 4"
+    },
+    "Base File for Django HTML  file with  Materialize CSS": {
+        "prefix": "!basemc",
+        "body": [
+            "{% load static %}",
+            "<!DOCTYPE HTML>",
+            "<html lang =\"en\">",
+            "<head>",
+            "<meta charset= \"UTF-8\">",
+            "<meta name=\"viewport\" content =\"width = device-width,initial-scale=1.0\">",
+            "<meta http-equiv =\"X-UA-Compatible\"  content =\"ie=edge\">",
+            "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css\">",
+            "<title> ${1:title} </title>",
+            "</head>",
+            "<body>",
+            "{% block content %}",
+            "<h1> Hello World </h1>",
+            "",
+            "",
+            "",
+            "{% endblock %}",
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js\"></script>",
+            "</body>",
+            "<html>"
+        ],
+        "description":"Base File for Django HTML  file with  Materialize CSS"
+    },
+    "Extends the Base File": {
+        "prefix": "!extend",
+        "body": [
+            "{% extends '${TM_DIRECTORY}/${TM_FILENAME}' %}",
+            "",
+            "",
+            "{% block content %}",
+            "",
+            "",
+            "{% endblock %}"
+        ],
+        "description":"Extends the Base File"
+    },
+    " Simple If Block": {
+        "prefix": "!sif",
+        "body": [
+            "{% if ${1 :condition} %}",
+            "$0",
+            "{% endif %}"
+        ],
+        "description":"Simple If Block"
+    },
+    "If Else Block": {
+        "prefix": "!ife",
+        "body": [
+            "{% if ${1:condition}  %}",
+            "",
+            "{% else %}",
+            "",
+            "{% endif %}"
+        ],
+        "description":"If Else Block"
+    },
+    "Elif Block": {
+        "prefix": "!iff",
+        "body": [
+            "{% if ${1:condition}  %}",
+            "${2:body1}",
+            "",
+            "{% elif ${3:condition} %}",
+            "${4:body2}",
+            "",
+            "{% elif ${5:condition} %}",
+            "${6:body3}",
+            "",
+            "{% elif  ${7:condition} %}",
+            "${8:body3}",
+            ""
+        ],
+        "description":"Elif Block"
+    },
+    "For loop": {
+        "prefix": "!dfor",
+        "body": [
+            "{% for ${1:item} in ${2:items} %}",
+            "${3:body}",
+            "",
+            "",
+            "{% endfor %}"
+        ],
+        "description":"For Loop"
+    },
+    "Font Awesome CDN ":{
+        "prefix":"!fa",
+        "body":[
+            "<link href=\"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN\" crossorigin=\"anonymous\">"
+        ],
+        "description":"Adds Font Awesome CDN"
+    }
+    
+}

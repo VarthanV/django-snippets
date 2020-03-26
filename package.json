@@ -1,0 +1,26 @@
+{
+    "name": "django-snippets",
+    "displayName": "Django Snippets",
+    "description": "Code Snippets for hardcore Django Developers",
+    "version": "1.0.0",
+    "publisher":"Vishnu Varthan",
+    "icon": "",
+    "engines": {
+        "vscode": "^1.43.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "python",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "html",
+                "path":"./snippets/snippets.json"
+            }
+        ]
+    }
+}
