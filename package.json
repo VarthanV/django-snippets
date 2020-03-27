@@ -3,8 +3,12 @@
     "displayName": "Django Snippets",
     "description": "Code Snippets for hardcore Django Developers",
     "version": "1.0.0",
-    "publisher":"Vishnu Varthan",
-    "icon": "",
+    "publisher": "vichu006",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/VarthanV/django-snippets"
+    },
+    "icon": "icon.ico",
     "engines": {
         "vscode": "^1.43.0"
     },
@@ -19,7 +23,7 @@
             },
             {
                 "language": "html",
-                "path":"./snippets/snippets.json"
+                "path": "./snippets/snippets.json"
             }
         ]
     }

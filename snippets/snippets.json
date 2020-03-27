@@ -113,7 +113,7 @@
             "",
             "{% endfor %}"
         ],
-        "description":"For Loop"
+        "description":"For loop "
     },
     "Font Awesome CDN ":{
         "prefix":"!fa",
