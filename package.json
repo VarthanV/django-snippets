@@ -1,15 +1,15 @@
 {
     "name": "django-snippets",
-    "displayName": "Django Snippets",
+    "displayName": "Django Frontend  Snippets",
     "description": "Code Snippets for hardcore Django Developers",
-    "version": "1.0.0",
+    "version": "1.0.3",
     "publisher": "vichu006",
     "repository": {
         "type": "git",
         "url": "https://github.com/VarthanV/django-snippets"
     },
     "icon": "icon.ico",
-    "engines": {
+    "engines": { 
         "vscode": "^1.43.0"
     },
     "categories": [

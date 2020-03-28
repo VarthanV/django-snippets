@@ -10,12 +10,12 @@
             "<meta name=\"viewport\" content =\"width = device-width,initial-scale=1.0\">",
             "<meta http-equiv =\"X-UA-Compatible\"  content =\"ie=edge\">",
             "<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\"integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\">",
-            "<title> ${1:title} </title>",
+            "<title> ${1:title1} </title>",
             "</head>",
             "<body>",
             "{% block content %}",
             "<h1> Hello World </h1>",
-            "",
+            "${0}",
             "",
             "",
             "{% endblock %}",
@@ -38,12 +38,12 @@
             "<meta name=\"viewport\" content =\"width = device-width,initial-scale=1.0\">",
             "<meta http-equiv =\"X-UA-Compatible\"  content =\"ie=edge\">",
             "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css\">",
-            "<title> ${1:title} </title>",
+            "<title> ${1:title1} </title>",
             "</head>",
             "<body>",
             "{% block content %}",
             "<h1> Hello World </h1>",
-            "",
+            "$0",
             "",
             "",
             "{% endblock %}",
@@ -56,11 +56,11 @@
     "Extends the Base File": {
         "prefix": "!extend",
         "body": [
-            "{% extends '${TM_DIRECTORY}/${TM_FILENAME}' %}",
+            "{% extends '${1:TM_DIRECTORY}/${2:TM_FILENAME}' %}",
             "",
             "",
             "{% block content %}",
-            "",
+            "${3:body}",
             "",
             "{% endblock %}"
         ],
@@ -69,7 +69,7 @@
     " Simple If Block": {
         "prefix": "!sif",
         "body": [
-            "{% if ${1 :condition} %}",
+            "{% if ${1:condition} %}",
             "$0",
             "{% endif %}"
         ],
@@ -79,9 +79,9 @@
         "prefix": "!ife",
         "body": [
             "{% if ${1:condition}  %}",
-            "",
+            " ${2:body1}",
             "{% else %}",
-            "",
+            "${3:body2}",
             "{% endif %}"
         ],
         "description": "If Else Block"
@@ -89,17 +89,17 @@
     "Elif Block": {
         "prefix": "!iff",
         "body": [
-            "{% if ${1:condition}  %}",
+            "{% if ${1:condition1}  %}",
             "${2:body1}",
             "",
-            "{% elif ${3:condition} %}",
+            "{% elif ${3:condition2} %}",
             "${4:body2}",
             "",
-            "{% elif ${5:condition} %}",
+            "{% elif ${5:condition3} %}",
             "${6:body3}",
             "",
-            "{% elif  ${7:condition} %}",
-            "${8:body3}",
+            "{% elif  ${7:condition4} %}",
+            "${8:body4}",
             ""
         ],
         "description": "Elif Block"

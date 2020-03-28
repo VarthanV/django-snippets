@@ -11,5 +11,5 @@
 - **!micons** -         Adds Material Icons CDN
 - **!swal**   -         Adds Sweet Alert CDN
 -**!script**  -         Link JS Scripts
--**!css**     =         Link Style Sheets 
+-**!css**     -         Link Style Sheets 
 - **!token**  -         Adds the CSRF Token Tag 
