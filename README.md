@@ -7,4 +7,9 @@
 - **ife** -             Creates a If Else block
 - **!iff** -             Creates a Nested If block
 - **!dfor**-           Creates a For Loop
-- **!fa"** -             Creates boiler Plate Code for Font Awesome CDN 
+- **!fa** -             Creates boiler Plate Code for Font Awesome CDN 
+- **!micons** -         Adds Material Icons CDN
+- **!swal**   -         Adds Sweet Alert CDN
+-**!script**  -         Link JS Scripts
+-**!css**     =         Link Style Sheets 
+- **!token**  -         Adds the CSRF Token Tag 

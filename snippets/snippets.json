@@ -25,7 +25,7 @@
             "</body>",
             "<html>"
         ],
-        "description":"Base File for Django HTML file with Bootstrap 4"
+        "description": "Base File for Django HTML file with Bootstrap 4"
     },
     "Base File for Django HTML  file with  Materialize CSS": {
         "prefix": "!basemc",
@@ -51,7 +51,7 @@
             "</body>",
             "<html>"
         ],
-        "description":"Base File for Django HTML  file with  Materialize CSS"
+        "description": "Base File for Django HTML  file with  Materialize CSS"
     },
     "Extends the Base File": {
         "prefix": "!extend",
@@ -64,7 +64,7 @@
             "",
             "{% endblock %}"
         ],
-        "description":"Extends the Base File"
+        "description": "Extends the Base File"
     },
     " Simple If Block": {
         "prefix": "!sif",
@@ -73,7 +73,7 @@
             "$0",
             "{% endif %}"
         ],
-        "description":"Simple If Block"
+        "description": "Simple If Block"
     },
     "If Else Block": {
         "prefix": "!ife",
@@ -84,7 +84,7 @@
             "",
             "{% endif %}"
         ],
-        "description":"If Else Block"
+        "description": "If Else Block"
     },
     "Elif Block": {
         "prefix": "!iff",
@@ -102,7 +102,7 @@
             "${8:body3}",
             ""
         ],
-        "description":"Elif Block"
+        "description": "Elif Block"
     },
     "For loop": {
         "prefix": "!dfor",
@@ -113,14 +113,48 @@
             "",
             "{% endfor %}"
         ],
-        "description":"For loop "
+        "description": "For loop "
     },
-    "Font Awesome CDN ":{
-        "prefix":"!fa",
-        "body":[
-            "<link href=\"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN\" crossorigin=\"anonymous\">"
+    "Font Awesome CDN ": {
+        "prefix": "!fa",
+        "body": [
+            "<link href=\"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css]\" rel=\"stylesheet\" integrity=\"sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN\" crossorigin=\"anonymous\">"
         ],
-        "description":"Adds Font Awesome CDN"
+        "description": "Adds Font Awesome CDN"
+    },
+    "Google Material Icons CDN": {
+        "prefix": "!micons",
+        "body": [
+            "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\">"
+        ],
+        "description": "Adds Google's Material Icon CDN"
+    },
+    "Sweet Alert CDN": {
+        "prefix": "!swal",
+        "body": [
+            "<script src=\"https://unpkg.com/sweetalert/dist/sweetalert.min.js\"></script>"
+        ],
+        "description": "Adds Sweet Alert CDN"
+    },
+    "Link Scripts": {
+        "prefix": "!script",
+        "body": [
+            "<script src=\"{% static '${1:appname}/${2:filename}'%}\"></script> "
+        ],
+        "description": "Link the Scripts"
+    },
+    "Link Styles": {
+        "prefix": "!css",
+        "body": [
+            "<link rel=\"stylesheet\" type=\"text/css\" href=\"{% static '${1:appname}/${2:filename}'%}\">"
+        ],
+        "descriptiion": "Link the CSS"
+    },
+    "Token": {
+        "prefix": "!token",
+        "body": [
+            "{% csrf_token %}"
+        ],
+        "description": "Links the CSRF Token "
     }
-    
 }
