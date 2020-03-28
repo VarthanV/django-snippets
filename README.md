@@ -1,5 +1,9 @@
 
 # # Django Snippets
+
+
+![Alt Text](./django-snippets.gif)
+
 - **!basebs4** - Creates the boiler plate place code base.html with Bootstrap 4
 - **basemc** -    Creates the boiler plate place code base.html with  Materialize CSS
 - **!extend**  -    Creates the extension  code in the other HTML File
@@ -13,3 +17,4 @@
 -**!script**  -         Link JS Scripts
 -**!css**     -         Link Style Sheets 
 - **!token**  -         Adds the CSRF Token Tag 
+

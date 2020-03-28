@@ -56,7 +56,7 @@
     "Extends the Base File": {
         "prefix": "!extend",
         "body": [
-            "{% extends '${1:TM_DIRECTORY}/${2:TM_FILENAME}' %}",
+            "{% extends '$TM_DIRECTORY}/$TM_FILENAME' %}",
             "",
             "",
             "{% block content %}",
@@ -79,9 +79,9 @@
         "prefix": "!ife",
         "body": [
             "{% if ${1:condition}  %}",
-            " ${2:body1}",
+            "${2:body1}",
             "{% else %}",
-            "${3:body2}",
+            "%{3:body2}",
             "{% endif %}"
         ],
         "description": "If Else Block"
