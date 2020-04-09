@@ -118,7 +118,7 @@
     "Font Awesome CDN ": {
         "prefix": "!fa",
         "body": [
-            "<link href=\"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css]\" rel=\"stylesheet\" integrity=\"sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN\" crossorigin=\"anonymous\">"
+            "<link href=\"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css\" rel=\"stylesheet\" integrity=\"sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN\" crossorigin=\"anonymous\">"
         ],
         "description": "Adds Font Awesome CDN"
     },
@@ -156,5 +156,34 @@
             "{% csrf_token %}"
         ],
         "description": "Links the CSRF Token "
+    },
+    "Include Tag":{
+        "prefix":"!inc",
+        "body":[
+            "{% include %}"
+        ],
+        "description":"Places the Include Tag"
+    },
+    "Variable":{
+        "prefix":"!v",
+        "body":[
+            "{{${1:varname}}}"
+        ],
+        "description":"Used to Create a Variable"
+    },
+    "Load":{
+        "prefix":"!load",
+        "body":[
+            "{% load %}"
+        ],
+        "Description":"Load Tag"
+    },
+    "Create a Block":{
+        "prefix":"!block",
+        "body":[
+            "{% block %}  {% endblock %}"
+        ],
+        "description":"Creates a Block"
     }
+
 }

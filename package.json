@@ -2,7 +2,7 @@
     "name": "django-snippets",
     "displayName": "Django Frontend  Snippets",
     "description": "Code Snippets for hardcore Django Developers",
-    "version": "1.0.3",
+    "version": "1.0.5",
     "publisher": "vichu006",
     "repository": {
         "type": "git",
