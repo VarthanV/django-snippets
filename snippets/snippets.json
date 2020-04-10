@@ -56,7 +56,7 @@
     "Extends the Base File": {
         "prefix": "!extend",
         "body": [
-            "{% extends '$TM_DIRECTORY}/$TM_FILENAME' %}",
+            "{% extends '$TM_DIRECTORY/base.html' %}",
             "",
             "",
             "{% block content %}",
